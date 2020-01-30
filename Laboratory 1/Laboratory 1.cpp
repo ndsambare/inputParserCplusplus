@@ -27,7 +27,7 @@ int parsingFunction(std::vector<string>& alpha, char* beta) {
 		while (infile >> word) {
 			alpha.push_back(word);
 		}
-			cout << "The function worked." << endl;
+			//cout << "The function worked." << endl;
 		
 		return success; 
 	}

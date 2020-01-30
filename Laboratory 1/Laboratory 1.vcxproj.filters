@@ -21,7 +21,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
-    <Text Include="InputFile.txt" />
+    <Text Include="x64\Debug\InputFile.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">

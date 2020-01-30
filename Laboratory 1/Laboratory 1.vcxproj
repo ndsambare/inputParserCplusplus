@@ -150,8 +150,8 @@
     <ClCompile Include="Laboratory 1.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="InputFile.txt" />
     <Text Include="ReadMe.txt" />
+    <Text Include="x64\Debug\InputFile.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
