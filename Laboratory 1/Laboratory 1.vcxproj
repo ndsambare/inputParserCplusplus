@@ -150,6 +150,7 @@
     <ClCompile Include="Laboratory 1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="InputFile.txt" />
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>

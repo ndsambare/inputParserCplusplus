@@ -18,28 +18,87 @@ int parsingFunction(std::vector<string>& alpha, char* beta) {
 	string line, word;
 	infile.open(beta);
 
-	while (getline(infile, line)) {
-		istringstream iss(line);
-		while (iss >> word) {
-			cout << word;
+	if (infile.is_open()) {
+
+
+
+	//	while (getline(infile, line)) {
+	//		istringstream iss(line);
+		while (infile >> word) {
+			alpha.push_back(word);
 		}
-		cout << endl;
+			cout << "The function worked." << endl;
+		
+		return success; 
 	}
 	//prints out the contents word by word 
 
-	if (std::getline (infile, line)) {
-		return success;
-	}
+
 	else {
 		std::cout <<("There was an input error that ocurred.");
 		return failInput; 
 	}
 }
 
+int usageFunction(const string & alpha) {
+	std::cout << alpha << endl; 
+	std::cout << "usage: lab0 <InputFile.txt>"; 
+	return failInput; 
+}
 
-int main()
+
+int main(int argc, char * argv[])
 {
-    std::cout << "Hello World!\n";
+	if (argc == commandLine) {
+		
+	}
+	else {
+		return usageFunction(argv[programName]); 
+	}
+
+	vector<string> abc; 
+
+	int store = parsingFunction(abc, argv[inputName]); 
+	if (store != success) {
+		return store;
+	}
+	
+	vector<int> cba; 
+
+	//vector<string>::iterator dw; 
+
+	for (int i = 0; i < abc.size(); i++) {
+
+		bool word = true; 
+		for (int j = 0; j < abc[i].size(); j++) {
+
+			if (isdigit(abc[i][j])) {
+				
+
+
+			}
+			else {
+				
+
+			 word = false; 
+			}
+
+		}
+		if (word) {
+			istringstream iss(abc[i]);
+			int temp; 
+			iss >> temp; 
+			cba.push_back(temp); 
+	}
+		else {
+			std::cout << abc[i] << endl; 
+		}
+		}
+	for (int k = 0; k < cba.size(); k++) {
+		std::cout << cba[k] << endl;
+
+	}
+	return success; 
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
