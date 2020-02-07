@@ -19,3 +19,9 @@ Line 2 ---- The result was as expected.  The words that are only digits (332, 23
 7. 737 3namit7347 ---- The result was as expected as 3namit7347 was printed and the words that were all digits printed was 737, just as it should have been. 
 
 8. Also, when I ran the echo %errorlevel% command after the program finished running, the error level value returned was 0. 
+
+
+EXTRA CREDIT
+1. 332 Studios    Desktop    eclipse.configuration  My Documents  perl5     Public     Videos   winprofile
+artifacts.xml  Downloads  Music                  p2            Pictures  Templates  WINDOWS
+This is what I got after running the ls command in the Linux enviornment. 
